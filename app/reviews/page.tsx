@@ -79,7 +79,7 @@ export default function ReviewsPage() {
       <section className="py-8 bg-green-50">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <a
-            href="https://g.page/review"
+            href="https://www.google.com/maps/place/Lose+Weight+Today/@-37.882,145.028,17z/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-herbalife-orange hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition-colors"

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -12,6 +13,22 @@ export const metadata: Metadata = {
     url: "https://www.loseweighttoday.com.au/before-and-after-results",
   },
 };
+
+const images = [
+  "site-image-2.webp",
+  "site-image-3.gif",
+  "site-image-4.webp",
+  "site-image-5.webp",
+  "site-image-6.webp",
+  "site-image-7.webp",
+  "site-image-8.webp",
+  "site-image-9.webp",
+  "site-image-10.webp",
+  "site-image-11.webp",
+  "site-image-12.webp",
+  "site-image-13.webp",
+  "site-image-14.webp",
+];
 
 export default function BeforeAfterPage() {
   return (
@@ -39,28 +56,18 @@ export default function BeforeAfterPage() {
             </p>
           </div>
 
-          {/* Transformation Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { label: "Weight Management Program", result: "Achieved their goal weight through consistent nutrition and coaching" },
-              { label: "Quickstart Program", result: "Kickstarted their weight-loss journey with visible results" },
-              { label: "Personalised Coaching", result: "Transformed their lifestyle with ongoing support and guidance" },
-              { label: "Formula 1 Shake Plan", result: "Balanced nutrition helped achieve sustainable weight loss" },
-              { label: "Ultimate Program", result: "Comprehensive program delivered outstanding transformation" },
-              { label: "Advanced Program", result: "Stepped up their journey with enhanced nutrition support" },
-            ].map((item, i) => (
-              <div key={i} className="bg-gray-50 rounded-xl overflow-hidden border border-gray-100">
-                <div className="h-48 bg-gradient-to-br from-green-100 to-green-50 flex items-center justify-center">
-                  <div className="text-center">
-                    <svg className="w-16 h-16 text-herbalife-green mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                    <span className="text-sm text-herbalife-green font-semibold">Client Transformation</span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="font-heading font-bold text-lg text-gray-900 mb-2">{item.label}</h3>
-                  <p className="text-gray-600 text-sm">{item.result}</p>
+          {/* Image Gallery */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {images.map((img, i) => (
+              <div key={i} className="bg-gray-50 rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-shadow">
+                <div className="relative w-full" style={{ aspectRatio: "4/3" }}>
+                  <Image
+                    src={`/before-after/${img}`}
+                    alt={`Client transformation result ${i + 1}`}
+                    fill
+                    className="object-contain bg-white"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
                 </div>
               </div>
             ))}

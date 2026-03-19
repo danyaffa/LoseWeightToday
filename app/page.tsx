@@ -18,38 +18,32 @@ const productCategories = [
   {
     title: "Daily Nutrition",
     description: "Formula 1 shakes, multivitamins & everyday nutrition essentials.",
-    href: "/herbalife-daily-nutrition",
+    href: "https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3201",
     icon: "🥤",
   },
   {
     title: "Programs",
     description: "Quickstart, Advanced & Ultimate weight management programs.",
-    href: "/herbalife-programs",
+    href: "https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/699",
     icon: "📋",
   },
   {
     title: "Weight Management",
     description: "Herbal teas, protein powders & metabolism-boosting supplements.",
-    href: "/herbalife-weight-management",
+    href: "https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3223",
     icon: "⚖️",
   },
   {
     title: "Sports Nutrition",
     description: "Herbalife24 sports range for energy, performance & recovery.",
-    href: "/herbalife-sports-nutrition",
+    href: "https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3325",
     icon: "🏃",
   },
   {
     title: "Supplements",
     description: "Aloe concentrate, fibre complex & targeted nutrition.",
-    href: "/hebalife-supplements",
+    href: "https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3222",
     icon: "💊",
-  },
-  {
-    title: "Shop All Products",
-    description: "Browse our full range of Herbalife nutrition products.",
-    href: "/shop",
-    icon: "🛒",
   },
 ];
 
@@ -142,9 +136,11 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {productCategories.map((cat) => (
-              <Link
+              <a
                 key={cat.href}
                 href={cat.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-shadow border border-gray-100 group"
               >
                 <div className="text-4xl mb-4">{cat.icon}</div>
@@ -152,7 +148,7 @@ export default function HomePage() {
                   {cat.title}
                 </h3>
                 <p className="text-gray-600 text-sm">{cat.description}</p>
-              </Link>
+              </a>
             ))}
           </div>
         </div>

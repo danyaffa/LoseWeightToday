@@ -31,12 +31,11 @@ export default function Footer() {
         <div>
           <h3 className="font-heading font-bold text-lg mb-4">Products</h3>
           <ul className="space-y-2 text-sm">
-            <li><Link href="/herbalife-programs" className="text-gray-300 hover:text-herbalife-green transition-colors">Programs</Link></li>
-            <li><Link href="/herbalife-daily-nutrition" className="text-gray-300 hover:text-herbalife-green transition-colors">Daily Nutrition</Link></li>
-            <li><Link href="/herbalife-weight-management" className="text-gray-300 hover:text-herbalife-green transition-colors">Weight Management</Link></li>
-            <li><Link href="/herbalife-sports-nutrition" className="text-gray-300 hover:text-herbalife-green transition-colors">Sports Nutrition</Link></li>
-            <li><Link href="/hebalife-supplements" className="text-gray-300 hover:text-herbalife-green transition-colors">Supplements</Link></li>
-            <li><Link href="/shop" className="text-gray-300 hover:text-herbalife-green transition-colors">Shop All</Link></li>
+            <li><a href="https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/699" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-herbalife-green transition-colors">Programs</a></li>
+            <li><a href="https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3201" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-herbalife-green transition-colors">Daily Nutrition</a></li>
+            <li><a href="https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3223" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-herbalife-green transition-colors">Weight Management</a></li>
+            <li><a href="https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3325" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-herbalife-green transition-colors">Sports Nutrition</a></li>
+            <li><a href="https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3222" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-herbalife-green transition-colors">Supplements</a></li>
           </ul>
         </div>
 

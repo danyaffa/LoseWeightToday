@@ -3,19 +3,17 @@ import Link from "next/link";
 import { useState } from "react";
 
 const productLinks = [
-  { href: "/herbalife-programs", label: "Programs" },
-  { href: "/herbalife-daily-nutrition", label: "Daily Nutrition" },
-  { href: "/herbalife-weight-management", label: "Weight Management" },
-  { href: "/herbalife-sports-nutrition", label: "Sports Nutrition" },
-  { href: "/hebalife-supplements", label: "Supplements" },
-  { href: "/shop", label: "Shop All" },
+  { href: "https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/699", label: "Programs", external: true },
+  { href: "https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3201", label: "Daily Nutrition", external: true },
+  { href: "https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3223", label: "Weight Management", external: true },
+  { href: "https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3325", label: "Sports Nutrition", external: true },
+  { href: "https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3222", label: "Supplements", external: true },
 ];
 
 const mainLinks = [
   { href: "/", label: "Home" },
   { href: "/before-and-after-results", label: "Before and After Results" },
   { href: "/business-opportunity", label: "Business - Opportunity" },
-  { href: "/blog", label: "Blog" },
   { href: "/reviews", label: "Reviews" },
 ];
 
@@ -69,13 +67,15 @@ export default function Navbar() {
             {productsOpen && (
               <div className="absolute top-full left-0 bg-white shadow-lg rounded-md py-2 min-w-[200px] border">
                 {productLinks.map((link) => (
-                  <Link
+                  <a
                     key={link.href}
                     href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-herbalife-green transition-colors"
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 ))}
               </div>
             )}
@@ -136,14 +136,16 @@ export default function Navbar() {
             {mobileProductsOpen && (
               <div className="pl-4 space-y-1">
                 {productLinks.map((link) => (
-                  <Link
+                  <a
                     key={link.href}
                     href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block px-3 py-2 text-sm text-gray-600 hover:text-herbalife-green hover:bg-green-50 rounded-md"
                     onClick={() => setMobileOpen(false)}
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 ))}
               </div>
             )}

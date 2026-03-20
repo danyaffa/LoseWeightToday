@@ -82,7 +82,7 @@ export default function Navbar() {
           </div>
 
           <a
-            href="https://weight-loss-shakes.goherbalife.com/Catalog/Home/Index/en-AU"
+            href="https://weight-loss-shakes.goherbalife.com/Account/Register/Index/en-AU?returnUrl=https://weight-loss-shakes.goherbalife.com/Catalog/Home/Index/en-AU"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 bg-herbalife-orange text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-orange-600 transition-colors"
@@ -151,7 +151,7 @@ export default function Navbar() {
             )}
 
             <a
-              href="https://weight-loss-shakes.goherbalife.com/Catalog/Home/Index/en-AU"
+              href="https://weight-loss-shakes.goherbalife.com/Account/Register/Index/en-AU?returnUrl=https://weight-loss-shakes.goherbalife.com/Catalog/Home/Index/en-AU"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center bg-herbalife-orange text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-orange-600 transition-colors mt-2"

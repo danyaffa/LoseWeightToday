@@ -179,8 +179,22 @@ function BusinessOpportunityContent() {
         </div>
       </section>
 
+      {/* Registration Heading */}
+      <section className="py-12 bg-white">
+        <div className="max-w-2xl mx-auto px-4">
+          <div className="bg-gradient-to-r from-herbalife-green to-green-700 rounded-2xl p-8 text-center text-white shadow-lg">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-2">
+              Registration Form
+            </h2>
+            <p className="text-green-100 text-lg">
+              Become an Independent Herbalife Member
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Form */}
-      <section className="py-16 bg-white">
+      <section className="pb-16 bg-white">
         <div className="max-w-xl mx-auto px-4">
           <form className="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm" onSubmit={handleSubmit}>
             <input type="hidden" name="_subject" value={registrationType === "member" ? "New Member Registration Enquiry – Lose Weight Today" : "New Preferred Customer Enquiry – Lose Weight Today"} />

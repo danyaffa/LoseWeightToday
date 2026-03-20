@@ -55,11 +55,7 @@ function BusinessOpportunityContent() {
     }
   }, [searchParams]);
 
-  const getTypeLabel = () => {
-    return registrationType === "member"
-      ? "Independent Herbalife Member"
-      : "Preferred Customer";
-  };
+  const getTypeLabel = () => "Independent Herbalife Member";
 
   const getRegistrationUrl = () => signUpUrl;
 
@@ -197,9 +193,9 @@ function BusinessOpportunityContent() {
       <section className="pb-16 bg-white">
         <div className="max-w-xl mx-auto px-4">
           <form className="bg-gray-50 rounded-2xl p-8 border border-gray-100 shadow-sm" onSubmit={handleSubmit}>
-            <input type="hidden" name="_subject" value={registrationType === "member" ? "New Member Registration Enquiry – Lose Weight Today" : "New Preferred Customer Enquiry – Lose Weight Today"} />
+            <input type="hidden" name="_subject" value="New Member Registration Enquiry – Lose Weight Today" />
             <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="type" value={registrationType === "member" ? "Independent Herbalife Member" : "Preferred Customer"} />
+            <input type="hidden" name="type" value="Member Registration Request" />
             <input type="text" name="_honey" style={{ display: "none" }} />
 
             {registrationType && (

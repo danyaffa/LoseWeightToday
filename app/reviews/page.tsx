@@ -63,8 +63,32 @@ function StarRating({ rating }: { rating: number }) {
 }
 
 export default function ReviewsPage() {
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Lose Weight Today - Herbalife AU",
+    url: "https://www.loseweighttoday.com.au",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: reviews.length.toString(),
+      bestRating: "5",
+      worstRating: "1",
+    },
+    review: reviews.map((r) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: r.name },
+      reviewRating: { "@type": "Rating", ratingValue: r.rating.toString(), bestRating: "5" },
+      reviewBody: r.text,
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
       {/* Hero */}
       <section className="bg-gradient-to-br from-herbalife-green to-green-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">

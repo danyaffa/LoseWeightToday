@@ -112,12 +112,14 @@ export default function HomePage() {
                 Our Herbalife protein nutrition products are designed to support healthy weight management
                 while helping you maintain lean muscle mass.
               </p>
-              <Link
-                href="/herbalife-daily-nutrition"
+              <a
+                href="https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3201"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-herbalife-green hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold transition-colors"
               >
                 Explore Nutrition Products
-              </Link>
+              </a>
             </div>
           </div>
         </div>

@@ -48,7 +48,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en-AU">
       <body className="antialiased">
         <Navbar />
         <main className="min-h-screen">{children}</main>
@@ -73,11 +73,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 postalCode: "3161",
                 addressCountry: "AU",
               },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: -37.882,
+                longitude: 145.028,
+              },
               openingHours: "Mo-Su 09:00-20:00",
               priceRange: "$$",
               sameAs: [
                 "https://www.facebook.com/Leffler.Dan.Yaffa",
                 "https://t.me/YaffaDan",
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.loseweighttoday.com.au" },
+                { "@type": "ListItem", position: 2, name: "Before & After Results", item: "https://www.loseweighttoday.com.au/before-and-after-results" },
+                { "@type": "ListItem", position: 3, name: "Business Opportunity", item: "https://www.loseweighttoday.com.au/business-opportunity" },
+                { "@type": "ListItem", position: 4, name: "Reviews", item: "https://www.loseweighttoday.com.au/reviews" },
+                { "@type": "ListItem", position: 5, name: "Contact", item: "https://www.loseweighttoday.com.au/contact" },
               ],
             }),
           }}

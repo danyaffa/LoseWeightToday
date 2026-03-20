@@ -12,9 +12,11 @@ const productLinks = [
 
 const mainLinks = [
   { href: "/", label: "Home" },
+  { href: "/recipes", label: "Recipes" },
   { href: "/before-and-after-results", label: "Before and After Results" },
   { href: "/business-opportunity", label: "Business - Opportunity" },
   { href: "/reviews", label: "Reviews" },
+  { href: "/about", label: "About" },
 ];
 
 export default function Navbar() {

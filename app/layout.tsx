@@ -98,7 +98,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 { "@type": "ListItem", position: 2, name: "Before & After Results", item: "https://www.loseweighttoday.com.au/before-and-after-results" },
                 { "@type": "ListItem", position: 3, name: "Business Opportunity", item: "https://www.loseweighttoday.com.au/business-opportunity" },
                 { "@type": "ListItem", position: 4, name: "Reviews", item: "https://www.loseweighttoday.com.au/reviews" },
-                { "@type": "ListItem", position: 5, name: "Contact", item: "https://www.loseweighttoday.com.au/contact" },
+                { "@type": "ListItem", position: 5, name: "Recipes", item: "https://www.loseweighttoday.com.au/recipes" },
+                { "@type": "ListItem", position: 6, name: "About", item: "https://www.loseweighttoday.com.au/about" },
+                { "@type": "ListItem", position: 7, name: "Contact", item: "https://www.loseweighttoday.com.au/contact" },
               ],
             }),
           }}

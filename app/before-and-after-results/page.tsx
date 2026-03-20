@@ -49,6 +49,9 @@ export default function BeforeAfterPage() {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
+            <p className="text-herbalife-orange font-bold text-lg mb-4">
+              *These results are not typical. Individual results will vary.
+            </p>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
               Our clients achieve lasting results through a combination of Herbalife nutrition products,
               personalised meal plans, and ongoing coaching support. These transformations represent real

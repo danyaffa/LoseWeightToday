@@ -48,12 +48,12 @@ const productCategories = [
 ];
 
 const topSellers = [
-  { name: "Formula 1 French Vanilla", description: "Nutritional Shake Mix 560g" },
-  { name: "Formula 1 Dutch Chocolate", description: "Nutritional Shake Mix 560g" },
-  { name: "Quickstart Program", description: "Complete weight management starter kit" },
-  { name: "Cell-U-Loss", description: "90 Tablets for water balance support" },
-  { name: "Instant Herbal Beverage", description: "Low-calorie tea mix – Original" },
-  { name: "Liftoff Energy", description: "Effervescent energy supplement" },
+  { name: "Formula 1 French Vanilla", description: "Nutritional Shake Mix 560g", href: "https://weight-loss-shakes.goherbalife.com/Catalog/Product/Details/en-AU/0141" },
+  { name: "Formula 1 Dutch Chocolate", description: "Nutritional Shake Mix 560g", href: "https://weight-loss-shakes.goherbalife.com/Catalog/Product/Details/en-AU/0142" },
+  { name: "Quickstart Program", description: "Complete weight management starter kit", href: "https://weight-loss-shakes.goherbalife.com/Catalog/Product/Details/en-AU/2072" },
+  { name: "Cell-U-Loss", description: "90 Tablets for water balance support", href: "https://weight-loss-shakes.goherbalife.com/Catalog/Product/Details/en-AU/0111" },
+  { name: "Instant Herbal Beverage", description: "Low-calorie tea mix – Original", href: "https://weight-loss-shakes.goherbalife.com/Catalog/Product/Details/en-AU/0106" },
+  { name: "Liftoff Energy", description: "Effervescent energy supplement", href: "https://weight-loss-shakes.goherbalife.com/Catalog/Product/Details/en-AU/2871" },
 ];
 
 const whyHerbalife = [
@@ -185,18 +185,21 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {topSellers.map((product) => (
-              <div
+              <a
                 key={product.name}
-                className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-herbalife-green transition-colors"
+                href={product.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-herbalife-green hover:shadow-lg transition-all group"
               >
                 <div className="w-full h-40 bg-green-50 rounded-lg flex items-center justify-center mb-4">
                   <span className="text-herbalife-green font-heading font-bold text-sm text-center px-4">
                     {product.name}
                   </span>
                 </div>
-                <h3 className="font-heading font-semibold text-gray-900 mb-1">{product.name}</h3>
+                <h3 className="font-heading font-semibold text-gray-900 group-hover:text-herbalife-green transition-colors mb-1">{product.name}</h3>
                 <p className="text-gray-500 text-sm">{product.description}</p>
-              </div>
+              </a>
             ))}
           </div>
           <div className="text-center mt-8">

@@ -275,19 +275,11 @@ function BusinessOpportunityContent() {
                 Your membership pack includes a protein shake canister, shaker, spoon, and digital product catalogues
                 to get you started on your journey.
               </p>
-              <div className="bg-green-50 rounded-xl p-6 mb-8">
-                <h3 className="font-heading font-semibold text-herbalife-green text-lg mb-3">What&apos;s Included:</h3>
-                <ul className="text-gray-700 text-sm space-y-2">
-                  {["Formula 1 Protein Shake Canister", "Herbalife Shaker & Spoon", "Digital Product Catalogues", "Full Mentorship & Training Support"].map((item) => (
-                    <li key={item} className="flex items-center justify-center gap-2">
-                      <svg className="w-5 h-5 text-herbalife-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <img
+                src="/Member-Pack.png"
+                alt="Herbalife Member Starter Pack"
+                className="mx-auto rounded-xl max-w-full"
+              />
             </div>
           </div>
         </div>

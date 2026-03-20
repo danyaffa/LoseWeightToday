@@ -99,27 +99,43 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Protein & Weight Loss Section */}
+      {/* Protein & Weight-Loss Drugs Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="bg-green-50 rounded-2xl p-8 md:p-12 border border-green-100">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="font-heading text-2xl md:text-3xl font-bold text-herbalife-green mb-4">
-                Protein &amp; Weight Loss
-              </h2>
-              <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                Consuming more protein may help protect against muscle loss during weight management.
-                Our Herbalife protein nutrition products are designed to support healthy weight management
-                while helping you maintain lean muscle mass.
-              </p>
-              <a
-                href="https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3201"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-herbalife-green hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold transition-colors"
-              >
-                Explore Nutrition Products
-              </a>
+          <div className="bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 md:p-12 border border-green-100 shadow-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              <div>
+                <h2 className="font-heading text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                  <span className="italic text-herbalife-green">Consuming more protein</span> may protect patients taking weight loss drugs from <span className="text-red-600">muscle loss</span>
+                </h2>
+                <p className="text-gray-800 text-lg font-semibold mt-4 mb-4">
+                  Clinical research shows that many people using weight-loss medications may also lose muscle — not just body weight.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  <strong>A major 2025 clinical study (ENDO 2025)</strong> found that higher protein consumption supports lean muscle and overall strength during weight loss.
+                </p>
+                <p className="text-gray-600 mb-4">
+                  Your body needs protein every day to stay strong, support metabolism, and maintain healthy muscle — especially when appetite decreases or eating patterns change.
+                </p>
+                <p className="text-gray-800 font-semibold italic mb-6">
+                  We have the solution for you — our premium, easy-to-use protein nutrition products give your body the daily support it needs to stay strong, healthy and energised throughout your weight-loss journey.
+                </p>
+                <a
+                  href="https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3201"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-herbalife-green hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors"
+                >
+                  Explore Nutrition Products
+                </a>
+              </div>
+              <div className="flex justify-center">
+                <img
+                  src="/seven-ways.png"
+                  alt="7 Ways to Consume Formula 1 Shake Mix — Pancakes, Shake, Waffles, Muffin, Energy Bites, Oats, Shake Bowl"
+                  className="rounded-xl w-full max-w-lg"
+                />
+              </div>
             </div>
           </div>
         </div>

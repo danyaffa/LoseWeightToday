@@ -3,9 +3,7 @@
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
-const preferredRegistrationUrl =
-  "https://accounts.myherbalife.com/Account/Create?appId=1&qrFlow=1&locale=en-US&SponsorId=sx4pw1BxvAWOTs1Yu1fm1A==&cmp=m_it_it_wbs_dssignup_btn_nap_copylink_20250305";
-const memberRegistrationUrl =
+const signUpUrl =
   "https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-AU&redirect=https://www.myherbalife.com/en-AU/";
 
 const benefits = [
@@ -63,11 +61,7 @@ function BusinessOpportunityContent() {
       : "Preferred Customer";
   };
 
-  const getRegistrationUrl = () => {
-    return registrationType === "member"
-      ? memberRegistrationUrl
-      : preferredRegistrationUrl;
-  };
+  const getRegistrationUrl = () => signUpUrl;
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

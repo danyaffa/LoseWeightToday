@@ -114,18 +114,8 @@ export default function ContactPage() {
               {/* Quick Actions */}
               <div className="mt-8 space-y-3">
                 <a
-                  href="https://weight-loss-shakes.goherbalife.com/Catalog/Home/Index/en-AU"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center bg-herbalife-orange hover:bg-orange-600 text-white py-3 rounded-full font-semibold transition-colors"
-                >
-                  Become a Preferred Customer
-                </a>
-                <a
-                  href="https://weight-loss-shakes.goherbalife.com/Catalog/Home/Index/en-AU"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block text-center border-2 border-herbalife-green text-herbalife-green hover:bg-herbalife-green hover:text-white py-3 rounded-full font-semibold transition-colors"
+                  href="/business-opportunity"
+                  className="block text-center bg-herbalife-green hover:bg-green-700 text-white py-3 rounded-full font-semibold transition-colors"
                 >
                   Become a Member
                 </a>

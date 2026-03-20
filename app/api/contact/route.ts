@@ -1,35 +1,47 @@
 import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
   try {
     const data = await request.json();
-    const { name, email, message, type, _subject } = data;
+    const { name, email, message, type } = data;
 
     if (!name || !email || !message) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    // Send via Formsubmit (free email forwarding service)
-    const formData = new FormData();
-    formData.append("name", name);
-    formData.append("email", email);
-    formData.append("message", message);
-    formData.append("_subject", _subject || "New Enquiry – Lose Weight Today");
-    formData.append("_captcha", "false");
-    if (type) formData.append("type", type);
-
-    const response = await fetch("https://formsubmit.co/ajax/leffleryd@gmail.com", {
-      method: "POST",
-      headers: { Accept: "application/json" },
-      body: formData,
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_APP_PASSWORD,
+      },
     });
 
-    if (response.ok) {
-      return NextResponse.json({ success: true });
-    }
+    const subject = type === "Independent Herbalife Member"
+      ? "New Member Registration Enquiry – Lose Weight Today"
+      : "New Preferred Customer Enquiry – Lose Weight Today";
 
-    return NextResponse.json({ error: "Failed to send message" }, { status: 500 });
-  } catch {
-    return NextResponse.json({ error: "Server error" }, { status: 500 });
+    await transporter.sendMail({
+      from: `"Lose Weight Today" <${process.env.GMAIL_USER}>`,
+      to: process.env.GMAIL_USER,
+      replyTo: email,
+      subject,
+      html: `
+        <h2>New Enquiry from Lose Weight Today</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Type:</strong> ${type || "General Enquiry"}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message.replace(/\n/g, "<br>")}</p>
+        <hr>
+        <p style="color: #666; font-size: 12px;">Sent from loseweighttoday.com.au contact form</p>
+      `,
+    });
+
+    return NextResponse.json({ success: true });
+  } catch (error) {
+    console.error("Email send error:", error);
+    return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
   }
 }

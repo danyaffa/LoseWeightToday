@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { TrackedInternalLink, TrackedPhoneLink } from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
   title: "Q&A – Frequently Asked Questions About Herbalife & Weight Loss",
@@ -103,18 +103,18 @@ export default function QAPage() {
               Contact us directly and we&apos;ll be happy to help.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
+              <TrackedInternalLink
                 href="/contact"
                 className="inline-block bg-herbalife-green hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors"
+                trackingLabel="faq_contact_us"
               >
                 Contact Us
-              </Link>
-              <a
-                href="tel:0478965828"
+              </TrackedInternalLink>
+              <TrackedPhoneLink
                 className="inline-block border-2 border-herbalife-green text-herbalife-green hover:bg-herbalife-green hover:text-white px-8 py-3 rounded-full font-semibold transition-colors"
               >
                 Call 0478 965 828
-              </a>
+              </TrackedPhoneLink>
             </div>
           </div>
         </div>

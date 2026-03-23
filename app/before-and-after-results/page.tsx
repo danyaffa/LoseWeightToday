@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import { TrackedInternalLink } from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
   title: "Before & After Weight-Loss Results – Real Client Transformations",
@@ -83,12 +83,13 @@ export default function BeforeAfterPage() {
             <p className="text-gray-600 mb-6">
               Get started with a free wellness evaluation and personalised nutrition plan.
             </p>
-            <Link
+            <TrackedInternalLink
               href="/contact"
               className="inline-block bg-herbalife-green hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors"
+              trackingLabel="before_after_get_started"
             >
               Get Started Today
-            </Link>
+            </TrackedInternalLink>
           </div>
         </div>
       </section>

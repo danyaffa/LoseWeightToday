@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { TrackedInternalLink } from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
   title: "About Jaffa & Dan Leffler – Senior Executive Presidents 15K",
@@ -189,18 +189,20 @@ export default function AboutPage() {
             opportunity — we&apos;re here to help you every step of the way.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
+            <TrackedInternalLink
               href="/contact"
               className="bg-herbalife-orange hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition-colors text-lg"
+              trackingLabel="about_contact_us"
             >
               Contact Us
-            </Link>
-            <Link
+            </TrackedInternalLink>
+            <TrackedInternalLink
               href="/business-opportunity"
               className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-full font-semibold transition-colors text-lg border border-white/30"
+              trackingLabel="about_explore_business"
             >
               Explore the Business
-            </Link>
+            </TrackedInternalLink>
           </div>
         </div>
       </section>

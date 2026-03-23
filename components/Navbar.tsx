@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { trackCTAClick, trackProductClick, trackPhoneClick } from "@/lib/gtag";
 
 const productLinks = [
   { href: "https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/699", label: "Programs", external: true },
@@ -29,7 +30,7 @@ export default function Navbar() {
       {/* Top bar */}
       <div className="bg-herbalife-green text-white text-center text-sm py-1.5 px-4">
         <span>Herbalife Independent Distributor — Dan &amp; Jaffa Leffler | Call{" "}
-          <a href="tel:0478965828" className="underline font-semibold">0478 965 828</a>
+          <a href="tel:0478965828" className="underline font-semibold" onClick={() => trackPhoneClick()}>0478 965 828</a>
         </span>
       </div>
 
@@ -75,6 +76,7 @@ export default function Navbar() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-herbalife-green transition-colors"
+                    onClick={() => trackProductClick(link.label)}
                   >
                     {link.label}
                   </a>
@@ -88,6 +90,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 bg-herbalife-orange text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-orange-600 transition-colors"
+            onClick={() => trackCTAClick("navbar_register_to_shop", "https://weight-loss-shakes.goherbalife.com")}
           >
             Register to Shop
           </a>
@@ -144,7 +147,7 @@ export default function Navbar() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block px-3 py-2 text-sm text-gray-600 hover:text-herbalife-green hover:bg-green-50 rounded-md"
-                    onClick={() => setMobileOpen(false)}
+                    onClick={() => { trackProductClick(link.label); setMobileOpen(false); }}
                   >
                     {link.label}
                   </a>
@@ -157,6 +160,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               className="block text-center bg-herbalife-orange text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-orange-600 transition-colors mt-2"
+              onClick={() => trackCTAClick("mobile_register_to_shop", "https://weight-loss-shakes.goherbalife.com")}
             >
               Register to Shop
             </a>

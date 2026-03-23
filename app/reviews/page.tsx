@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TrackedExternalLink } from "@/components/TrackedLink";
 
 export const metadata: Metadata = {
   title: "Client Reviews – What Our Customers Say",
@@ -102,14 +103,13 @@ export default function ReviewsPage() {
       {/* Add Review CTA */}
       <section className="py-8 bg-green-50">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <a
+          <TrackedExternalLink
             href="https://www.google.com/maps/place/Herbalife+Nutrition+Independent+Distributor+Jaffa+%26+Dan+Leffler/@-37.8709498,145.0225114,17z/data=!4m8!3m7!1s0x6ad669d3de506b93:0x2ea907ad85c8d3d0!8m2!3d-37.8709498!4d145.0225114!9m1!1b1!16s%2Fg%2F11g10n9l3r"
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-block bg-herbalife-orange hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition-colors"
+            trackingLabel="add_your_review"
           >
             Add Your Review
-          </a>
+          </TrackedExternalLink>
         </div>
       </section>
 

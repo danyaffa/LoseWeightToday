@@ -2,6 +2,7 @@
 
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
+import { trackFormSubmission, trackCTAClick, trackBusinessOpportunitySignup, trackDownload, trackExternalLink } from "@/lib/gtag";
 
 const signUpUrl =
   "https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-AU&redirect=https://www.myherbalife.com/en-AU/";
@@ -74,6 +75,7 @@ function BusinessOpportunityContent() {
         body: JSON.stringify(data),
       });
       if (response.ok) {
+        trackFormSubmission("member_registration");
         setShowPopup(true);
         form.reset();
       } else {
@@ -169,6 +171,7 @@ function BusinessOpportunityContent() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-white text-herbalife-green hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition-colors"
+            onClick={() => trackExternalLink("https://www.youtube.com/playlist?list=PLB3ZV-mBfQYyXcNczTG7oc9fffG9P97_P", "meet_wellness_educators")}
           >
             Meet Our Wellness Educators
           </a>
@@ -315,6 +318,7 @@ function BusinessOpportunityContent() {
                 type="button"
                 className="w-full border-2 border-herbalife-green text-herbalife-green hover:bg-herbalife-green hover:text-white py-3 rounded-full font-semibold transition-colors text-sm"
                 onClick={() => {
+                  trackDownload("sponsor-details.txt");
                   const text =
                     "Sponsor Details for Herbalife Registration\n" +
                     "==========================================\n\n" +
@@ -338,6 +342,7 @@ function BusinessOpportunityContent() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-herbalife-green hover:bg-green-700 text-white py-3 rounded-full font-semibold transition-colors text-center text-sm"
+                onClick={() => trackBusinessOpportunitySignup()}
               >
                 Sign Up Now
               </a>

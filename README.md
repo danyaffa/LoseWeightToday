@@ -28,7 +28,14 @@ Create a `.env.local` file:
 ```
 GMAIL_USER=your-email@gmail.com
 GMAIL_APP_PASSWORD=your-app-password
+NEXT_PUBLIC_GA_MEASUREMENT_ID=your-ga4-measurement-id
+NEXT_PUBLIC_OPENAI_ADS_PIXEL_ID=your-openai-ads-pixel-id
 ```
+
+Create the OpenAI Ads Pixel ID in Ads Manager under **Conversions**, then add
+`NEXT_PUBLIC_OPENAI_ADS_PIXEL_ID` to the Vercel project for Production,
+Preview, and Development. The website records `page_viewed` events and records
+`lead_created` only after the Business Opportunity enquiry is accepted.
 
 ## Site Map
 

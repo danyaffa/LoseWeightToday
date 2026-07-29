@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import OpenAIAds from "@/components/OpenAIAds";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.loseweighttoday.com.au"),
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en-AU">
       <body className="antialiased">
         <GoogleAnalytics />
+        <OpenAIAds />
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />

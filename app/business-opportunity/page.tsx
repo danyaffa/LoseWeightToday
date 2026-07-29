@@ -3,6 +3,7 @@
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { trackFormSubmission, trackCTAClick, trackBusinessOpportunitySignup, trackDownload, trackExternalLink } from "@/lib/gtag";
+import { trackOpenAILeadCreated } from "@/lib/openaiAds";
 
 const signUpUrl =
   "https://accounts.myherbalife.com/Account/Create?appId=1&locale=en-AU&redirect=https://www.myherbalife.com/en-AU/";
@@ -76,6 +77,7 @@ function BusinessOpportunityContent() {
       });
       if (response.ok) {
         trackFormSubmission("member_registration");
+        trackOpenAILeadCreated();
         setShowPopup(true);
         form.reset();
       } else {

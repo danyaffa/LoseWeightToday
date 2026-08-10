@@ -113,15 +113,26 @@ export default function HomePageClient() {
                 <p className="text-gray-800 font-semibold italic mb-6">
                   We have the solution for you — our premium, easy-to-use protein nutrition products give your body the daily support it needs to stay strong, healthy and energised throughout your weight-loss journey.
                 </p>
-                <a
-                  href="https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3201"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-herbalife-green hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors"
-                  onClick={() => trackCTAClick("explore_nutrition_products", "https://weight-loss-shakes.goherbalife.com")}
-                >
-                  Explore Nutrition Products
-                </a>
+                <div className="flex flex-col sm:flex-row gap-3 items-start">
+                  <a
+                    href="https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3201"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-herbalife-green hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold transition-colors"
+                    onClick={() => trackCTAClick("explore_nutrition_products", "https://weight-loss-shakes.goherbalife.com")}
+                  >
+                    Explore Nutrition Products
+                  </a>
+                  <a
+                    href="https://www.youtube.com/watch?v=bdgxQIUVyvs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block border-2 border-herbalife-green text-herbalife-green hover:bg-herbalife-green hover:text-white px-8 py-3 rounded-full font-semibold transition-colors"
+                    onClick={() => trackExternalLink("https://www.youtube.com/watch?v=bdgxQIUVyvs", "Watch GLP-1 Nutrition Video")}
+                  >
+                    Watch GLP-1 Nutrition Video
+                  </a>
+                </div>
               </div>
               <div className="flex justify-center">
                 <img

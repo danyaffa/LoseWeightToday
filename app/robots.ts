@@ -13,6 +13,16 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
         disallow: ["/api/"],
       },
+      {
+        userAgent: "OAI-SearchBot",
+        allow: "/",
+        disallow: ["/api/"],
+      },
+      {
+        userAgent: "OAI-AdsBot",
+        allow: "/",
+        disallow: ["/api/"],
+      },
     ],
     sitemap: "https://www.loseweighttoday.com.au/sitemap.xml",
     host: "https://www.loseweighttoday.com.au",

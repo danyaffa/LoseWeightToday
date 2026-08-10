@@ -17,12 +17,12 @@ const faqs = [
   {
     question: "How much weight can I expect to lose?",
     answer:
-      "When following our program with shakes, balanced meals, and regular exercise, most clients can expect to lose 0.5–1 kg per week. Results vary based on individual factors. We provide personalised coaching to help you stay consistent and achieve your goals.",
+      "Results vary from person to person depending on your starting point, consistency, and lifestyle. Following our program with shakes, balanced meals, and regular exercise, combined with personalised coaching, is designed to help you make steady, sustainable progress towards your goals.",
   },
   {
     question: "Are Herbalife products safe?",
     answer:
-      "Yes. Herbalife products are tested for quality and purity, free from banned substances, and comply with TGA (Therapeutic Goods Administration) regulations in Australia. If you are pregnant, breastfeeding, or on medication, we recommend consulting your doctor before starting any new nutrition program.",
+      "Yes. Herbalife products are manufactured to strict quality and safety standards and comply with applicable Australian food safety regulations. If you are pregnant, breastfeeding, or on medication, we recommend consulting your doctor before starting any new nutrition program.",
   },
   {
     question: "Is there scientific research behind Herbalife?",

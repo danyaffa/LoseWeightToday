@@ -64,9 +64,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Lose Weight Today - Herbalife AU",
+              alternateName: "Herbalife Independent Distributor Melbourne",
               description:
-                "Herbalife Independent Distributor offering personalised weight-loss coaching and nutrition products in Melbourne.",
+                "Herbalife Independent Distributor offering Herbalife nutrition products, personalised weight-loss coaching, and protein support across Melbourne and Australia.",
               url: "https://www.loseweighttoday.com.au",
+              image: "https://www.loseweighttoday.com.au/Logo.png",
+              logo: "https://www.loseweighttoday.com.au/Logo.png",
               telephone: "+61478965828",
               email: "leffleryd@gmail.com",
               address: {
@@ -84,6 +87,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               },
               openingHours: "Mo-Su 09:00-20:00",
               priceRange: "$$",
+              areaServed: [
+                { "@type": "City", name: "Melbourne" },
+                { "@type": "Country", name: "Australia" },
+              ],
+              founder: [
+                { "@type": "Person", name: "Dan Leffler" },
+                { "@type": "Person", name: "Jaffa Leffler" },
+              ],
+              knowsAbout: [
+                "Herbalife nutrition products",
+                "Weight management coaching",
+                "Protein nutrition",
+                "GLP-1 nutrition support",
+              ],
               sameAs: [
                 "https://www.facebook.com/Leffler.Dan.Yaffa",
                 "https://t.me/YaffaDan",

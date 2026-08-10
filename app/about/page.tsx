@@ -33,9 +33,9 @@ const services = [
     ),
   },
   {
-    title: "#1 Protein for GLP-1",
+    title: "Protein Support for GLP-1",
     description:
-      "Add the #1 Protein Shakes in the world as support for your GLP-1 injections — designed to help maintain muscle and energy.",
+      "Add premium protein nutrition alongside your GLP-1 journey — formulated to help support muscle and energy.",
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -104,9 +104,9 @@ export default function AboutPage() {
             </p>
             <p className="text-gray-700 text-lg leading-relaxed mt-4">
               Whether you want to improve your wellness with world-class
-              nutrition, add the #1 Protein Shakes in the world as support for
-              your GLP-1 injections, or build a rewarding home-based business,
-              we are here to guide and support you every step of the way.
+              nutrition, add premium protein support alongside your GLP-1
+              journey, or build a rewarding home-based business, we are here
+              to guide and support you every step of the way.
             </p>
           </div>
 

@@ -39,7 +39,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           <div className="flex flex-col">
             <span className="text-herbalife-green font-heading font-bold text-xl leading-tight">Lose Weight Today</span>
-            <span className="text-xs text-gray-500">Herbalife AU</span>
+            <span className="text-xs text-gray-500">Herbalife Independent Distributor</span>
           </div>
         </Link>
 

@@ -18,7 +18,7 @@ const productCategories = [
   },
   {
     title: "Weight Management",
-    description: "Herbal teas, protein powders & metabolism-boosting supplements.",
+    description: "Herbal teas, protein powders & targeted nutrition supplements.",
     href: "https://weight-loss-shakes.goherbalife.com/Catalog/Categories/ProductsList/en-AU/3223",
     icon: "\u2696\uFE0F",
   },
@@ -47,7 +47,7 @@ const topSellers = [
 
 const whyHerbalife = [
   { title: "Global Leader", description: "Herbalife has been a global nutrition leader for over 40 years, operating in 90+ countries." },
-  { title: "Science-Backed", description: "Products developed with input from leading scientists and nutrition experts worldwide." },
+  { title: "Quality Focused", description: "Products developed with input from scientists and nutrition experts worldwide." },
   { title: "4.8M Shakes Daily", description: "Over 4.8 million Herbalife shakes are consumed every day around the world." },
   { title: "Personalised Coaching", description: "Get a free wellness evaluation and personalised nutrition plan from your local distributor." },
 ];
@@ -68,7 +68,7 @@ export default function HomePageClient() {
             <span className="text-herbalife-orange">Healthier You</span> Starts Here
           </h1>
           <p className="text-lg md:text-xl text-green-100 max-w-2xl mb-8">
-            Personalised weight-loss coaching, proven Herbalife nutrition products, and ongoing
+            Personalised weight-management coaching, quality Herbalife nutrition products, and ongoing
             support from Dan &amp; Jaffa Leffler. Walk-in or shop online — 7 days a week.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -92,26 +92,26 @@ export default function HomePageClient() {
         </div>
       </section>
 
-      {/* Protein & Weight-Loss Drugs Section */}
+      {/* Protein Nutrition Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="bg-gradient-to-br from-green-50 to-white rounded-2xl p-8 md:p-12 border border-green-100 shadow-sm">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
               <div>
                 <h2 className="font-heading text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                  <span className="italic text-herbalife-green">Consuming more protein</span> may protect patients taking weight loss drugs from <span className="text-red-600">muscle loss</span>
+                  <span className="italic text-herbalife-green">Protein every day</span> is part of a balanced diet that helps maintain <span className="text-red-600">muscle</span>
                 </h2>
                 <p className="text-gray-800 text-lg font-semibold mt-4 mb-4">
-                  Clinical research shows that many people using weight-loss medications may also lose muscle — not just body weight.
+                  When you eat less, getting enough protein matters — protein contributes to the maintenance of muscle mass.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  <strong>A major 2025 clinical study (ENDO 2025)</strong> found that higher protein consumption supports lean muscle and overall strength during weight loss.
+                  <strong>Talk to your doctor</strong> before changing your diet if you have a medical condition or take any medication.
                 </p>
                 <p className="text-gray-600 mb-4">
-                  Your body needs protein every day to stay strong, support metabolism, and maintain healthy muscle — especially when appetite decreases or eating patterns change.
+                  Your body needs protein every day — especially when appetite decreases or eating patterns change.
                 </p>
                 <p className="text-gray-800 font-semibold italic mb-6">
-                  We have the solution for you — our premium, easy-to-use protein nutrition products give your body the daily support it needs to stay strong, healthy and energised throughout your weight-loss journey.
+                  Our easy-to-use Herbalife protein products help you get the protein you need, as part of a balanced diet and active lifestyle.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 items-start">
                   <a
@@ -128,9 +128,9 @@ export default function HomePageClient() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block border-2 border-herbalife-green text-herbalife-green hover:bg-herbalife-green hover:text-white px-8 py-3 rounded-full font-semibold transition-colors"
-                    onClick={() => trackExternalLink("https://www.youtube.com/watch?v=bdgxQIUVyvs", "Watch GLP-1 Nutrition Video")}
+                    onClick={() => trackExternalLink("https://www.youtube.com/watch?v=bdgxQIUVyvs", "Watch Nutrition Video")}
                   >
-                    Watch GLP-1 Nutrition Video
+                    Watch Nutrition Video
                   </a>
                 </div>
               </div>

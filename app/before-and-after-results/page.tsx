@@ -5,7 +5,7 @@ import { TrackedInternalLink } from "@/components/TrackedLink";
 export const metadata: Metadata = {
   title: "Before & After Weight-Loss Results – Real Client Transformations",
   description:
-    "See real before and after weight-loss results from our Herbalife nutrition clients in Melbourne. Personalised coaching and proven plans deliver real results.",
+    "Client stories from our Herbalife nutrition customers in Melbourne. These results are not typical. Individual results vary.",
   alternates: { canonical: "https://www.loseweighttoday.com.au/before-and-after-results" },
   openGraph: {
     title: "Before & After Weight-Loss Results – Real Client Transformations",
@@ -53,9 +53,9 @@ export default function BeforeAfterPage() {
               *These results are not typical. Individual results will vary.
             </p>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-              Our clients achieve lasting results through a combination of Herbalife nutrition products,
-              personalised meal plans, and ongoing coaching support. These transformations represent real
-              people who committed to their health journey.
+              These clients combined Herbalife nutrition products with a balanced diet, regular exercise
+              and ongoing coaching support. These transformations represent real people who committed to
+              their health journey.
             </p>
           </div>
 

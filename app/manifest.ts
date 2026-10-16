@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Lose Weight Today - Herbalife AU",
+    name: "Lose Weight Today - Herbalife Independent Distributor",
     short_name: "Lose Weight Today",
     description:
       "Herbalife Independent Distributor Melbourne. Personalised weight-loss coaching, nutrition plans & Herbalife products.",

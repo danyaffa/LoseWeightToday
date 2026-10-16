@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
 
       <section className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 prose prose-gray">
-          <p className="text-sm text-gray-500 mb-8">Last Updated: September 4, 2023</p>
+          <p className="text-sm text-gray-500 mb-8">Last Updated: October 17, 2026</p>
 
           <h2 className="font-heading text-xl font-bold text-gray-900 mt-8 mb-4">Introduction</h2>
           <p className="text-gray-600 mb-4">
@@ -39,6 +39,14 @@ export default function PrivacyPolicyPage() {
           <h2 className="font-heading text-xl font-bold text-gray-900 mt-8 mb-4">Use of Cookies</h2>
           <p className="text-gray-600 mb-4">
             Our website uses session and persistent cookies for essential services, policy acceptance, and functionality purposes. These help us provide a better browsing experience and understand how visitors use our site.
+          </p>
+
+          <h2 className="font-heading text-xl font-bold text-gray-900 mt-8 mb-4">Analytics and Advertising</h2>
+          <p className="text-gray-600 mb-4">
+            We use Google Analytics, Google Ads conversion tracking and the OpenAI Ads pixel to measure visits and enquiries. These services may use cookies and similar technologies to collect device and browsing information. We do not send health information or form contents to these services. You can opt out of personalised Google ads at{" "}
+            <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" className="text-herbalife-green hover:underline">adssettings.google.com</a>{" "}
+            and of Google Analytics with the{" "}
+            <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-herbalife-green hover:underline">Google Analytics opt-out add-on</a>.
           </p>
 
           <h2 className="font-heading text-xl font-bold text-gray-900 mt-8 mb-4">How We Use Your Information</h2>
@@ -58,7 +66,7 @@ export default function PrivacyPolicyPage() {
 
           <h2 className="font-heading text-xl font-bold text-gray-900 mt-8 mb-4">Your Rights</h2>
           <p className="text-gray-600 mb-4">
-            You have the right to request deletion or correction of your personal data. You can manage your information through your account settings or by contacting us directly.
+            You have the right to request deletion or correction of your personal data. You can ask for access or correction by contacting us directly. If you are not satisfied with our response, you can complain to the Office of the Australian Information Commissioner (oaic.gov.au).
           </p>
 
           <h2 className="font-heading text-xl font-bold text-gray-900 mt-8 mb-4">Children&apos;s Privacy</h2>

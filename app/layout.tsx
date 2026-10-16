@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_AU",
     url: "https://www.loseweighttoday.com.au",
-    siteName: "Lose Weight Today - Herbalife AU",
+    siteName: "Lose Weight Today - Herbalife Independent Distributor",
     title: "Lose Weight Today – Healthy Nutrition & Weight Management",
     description:
       "Herbalife Independent Distributor Melbourne. Personalised weight-loss coaching & Herbalife products. Call 0478 965 828.",
@@ -63,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Lose Weight Today - Herbalife AU",
+              name: "Lose Weight Today - Herbalife Independent Distributor",
               alternateName: "Herbalife Independent Distributor Melbourne",
               description:
                 "Herbalife Independent Distributor offering Herbalife nutrition products, personalised weight-loss coaching, and protein support across Melbourne and Australia.",
@@ -99,7 +99,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "Herbalife nutrition products",
                 "Weight management coaching",
                 "Protein nutrition",
-                "GLP-1 nutrition support",
               ],
               sameAs: [
                 "https://www.facebook.com/Leffler.Dan.Yaffa",

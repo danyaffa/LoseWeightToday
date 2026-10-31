@@ -63,6 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
+              "@id": "https://www.loseweighttoday.com.au/#organization",
               name: "Lose Weight Today - Herbalife Independent Distributor",
               alternateName: "Herbalife Independent Distributor Melbourne",
               description:
@@ -105,6 +106,49 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "https://t.me/YaffaDan",
               ],
             }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "@id": "https://www.loseweighttoday.com.au/#website",
+              url: "https://www.loseweighttoday.com.au/",
+              name: "Lose Weight Today - Herbalife Independent Distributor",
+              publisher: { "@id": "https://www.loseweighttoday.com.au/#organization" },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                name: "Personalised Weight-Loss Coaching",
+                description:
+                  "Free wellness evaluation and personalised Herbalife nutrition plan, with ongoing coaching support from Dan & Jaffa Leffler in Melbourne.",
+                provider: { "@id": "https://www.loseweighttoday.com.au/#organization" },
+                areaServed: [
+                  { "@type": "City", name: "Melbourne" },
+                  { "@type": "Country", name: "Australia" },
+                ],
+                url: "https://www.loseweighttoday.com.au/contact",
+              },
+              {
+                "@context": "https://schema.org",
+                "@type": "Service",
+                name: "Herbalife Business Opportunity",
+                description:
+                  "Information and support for becoming a Herbalife Independent Distributor, including low-cost membership and a 90-day money-back guarantee.",
+                provider: { "@id": "https://www.loseweighttoday.com.au/#organization" },
+                areaServed: { "@type": "Country", name: "Australia" },
+                url: "https://www.loseweighttoday.com.au/business-opportunity",
+              },
+            ]),
           }}
         />
         <script

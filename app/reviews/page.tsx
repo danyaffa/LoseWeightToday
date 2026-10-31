@@ -4,7 +4,7 @@ import { TrackedExternalLink } from "@/components/TrackedLink";
 export const metadata: Metadata = {
   title: "Client Reviews – What Our Customers Say",
   description:
-    "Read genuine client reviews and testimonials from our Herbalife nutrition customers in Melbourne. See why our clients love working with Dan & Jaffa.",
+    "Read genuine client reviews and testimonials from our Herbalife nutrition customers in Melbourne. See why our clients love working with Jaffa and Dan.",
   alternates: { canonical: "https://www.loseweighttoday.com.au/reviews" },
   openGraph: {
     title: "Client Reviews – What Our Customers Say",

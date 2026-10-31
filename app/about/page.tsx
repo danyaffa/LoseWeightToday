@@ -4,18 +4,18 @@ import { TrackedInternalLink } from "@/components/TrackedLink";
 export const metadata: Metadata = {
   title: "About Jaffa & Dan Leffler – Senior Executive Presidents 15K",
   description:
-    "Meet Jaffa & Dan Leffler — Independent Herbalife Members since 1993, Senior Executive Presidents 15K. Passionate about helping people with health, energy, and lifestyle goals in Melbourne.",
+    "Meet Jaffa and Dan Leffler — Herbalife Independent Members since 1993, Senior Executive Presidents 15K. Passionate about helping people with health, energy, and lifestyle goals in Melbourne.",
   alternates: { canonical: "https://www.loseweighttoday.com.au/about" },
   openGraph: {
     title: "About Jaffa & Dan Leffler – Senior Executive Presidents 15K",
     description:
-      "Meet Jaffa & Dan Leffler — Independent Herbalife Members since 1993. Helping people achieve health, energy, and lifestyle goals.",
+      "Meet Jaffa and Dan Leffler — Herbalife Independent Members since 1993. Helping people achieve health, energy, and lifestyle goals.",
     url: "https://www.loseweighttoday.com.au/about",
   },
 };
 
 const milestones = [
-  { year: "1993", text: "Became Independent Herbalife Members" },
+  { year: "1993", text: "Became Herbalife Independent Members" },
   { year: "2000+", text: "Achieved Senior Executive Presidents 15K status" },
   { year: "30+", text: "Years of experience in wellness and nutrition" },
   { year: "1000s", text: "Of customers helped on their health journey" },
@@ -83,7 +83,7 @@ export default function AboutPage() {
             About Us
           </h1>
           <p className="text-green-100 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Jaffa &amp; Dan Leffler — Independent Herbalife Members since 1993,
+            Jaffa &amp; Dan Leffler — Herbalife Independent Members since 1993,
             Senior Executive Presidents 15K
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function AboutPage() {
               Our Story
             </h2>
             <p className="text-gray-700 text-lg leading-relaxed">
-              We are Jaffa &amp; Dan Leffler — Independent Herbalife Members
+              We are Jaffa &amp; Dan Leffler — Herbalife Independent Members
               since 1993 and Senior Executive Presidents 15K. For over three
               decades, we have been passionate about helping people achieve their
               health, energy, and lifestyle goals.

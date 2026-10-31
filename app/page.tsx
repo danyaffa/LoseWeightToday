@@ -5,12 +5,12 @@ import HomePageClient from "@/components/HomePageClient";
 export const metadata: Metadata = {
   title: "Herbalife Distributors Melbourne | Herbalife Products Australia",
   description:
-    "Herbalife Independent Distributors in Melbourne. Contact Dan & Jaffa Leffler in Caulfield North, browse Herbalife products and order online Australia-wide.",
+    "Jaffa and Dan Leffler, Herbalife Independent Members in Melbourne. Contact them in Caulfield North, browse Herbalife products and order online Australia-wide.",
   alternates: { canonical: "https://www.loseweighttoday.com.au" },
   openGraph: {
     title: "Herbalife Distributors Melbourne | Lose Weight Today",
     description:
-      "Melbourne Herbalife Independent Distributors based in Caulfield North, with local assistance and Australia-wide online ordering.",
+      "Jaffa and Dan Leffler, Herbalife Independent Members, based in Caulfield North, Melbourne, with local assistance and Australia-wide online ordering.",
     url: "https://www.loseweighttoday.com.au",
   },
 };
@@ -25,7 +25,7 @@ export default function HomePage() {
             Herbalife Distributors Melbourne
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto mb-5">
-            Dan &amp; Jaffa Leffler are Herbalife Independent Distributors based in Caulfield North,
+            Jaffa and Dan Leffler are Herbalife Independent Members based in Caulfield North,
             Melbourne, with local contact and Australia-wide online ordering.
           </p>
           <Link

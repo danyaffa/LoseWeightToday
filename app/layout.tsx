@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Lose Weight Today",
   },
   description:
-    "Herbalife Independent Distributor Melbourne. Personalised weight-loss coaching, nutrition plans & Herbalife products. Walk-in 7 days 9am-8pm. Call Jaffa 0478 965 828.",
+    "Jaffa and Dan Leffler, Herbalife Independent Members in Melbourne. Personalised weight-loss coaching, nutrition plans & Herbalife products. Walk-in 7 days 9am-8pm. Call Jaffa 0478 965 828.",
   keywords: [
     "Herbalife",
     "weight loss",
@@ -23,21 +23,21 @@ export const metadata: Metadata = {
     "Herbalife distributor",
     "Caulfield North",
   ],
-  authors: [{ name: "Dan & Jaffa Leffler" }],
+  authors: [{ name: "Jaffa and Dan Leffler" }],
   openGraph: {
     type: "website",
     locale: "en_AU",
     url: "https://www.loseweighttoday.com.au",
-    siteName: "Lose Weight Today - Herbalife Independent Distributor",
+    siteName: "Lose Weight Today - Jaffa and Dan Leffler, Herbalife Independent Members",
     title: "Lose Weight Today – Healthy Nutrition & Weight Management",
     description:
-      "Herbalife Independent Distributor Melbourne. Personalised weight-loss coaching & Herbalife products. Call 0478 965 828.",
+      "Jaffa and Dan Leffler, Herbalife Independent Members in Melbourne. Personalised weight-loss coaching & Herbalife products. Call 0478 965 828.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Lose Weight Today – Healthy Nutrition & Weight Management",
     description:
-      "Herbalife Independent Distributor Melbourne. Personalised weight-loss coaching & Herbalife products.",
+      "Jaffa and Dan Leffler, Herbalife Independent Members in Melbourne. Personalised weight-loss coaching & Herbalife products.",
   },
   robots: {
     index: true,
@@ -64,10 +64,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "@id": "https://www.loseweighttoday.com.au/#organization",
-              name: "Lose Weight Today - Herbalife Independent Distributor",
-              alternateName: "Herbalife Independent Distributor Melbourne",
+              name: "Lose Weight Today - Jaffa and Dan Leffler, Herbalife Independent Members",
+              alternateName: "Jaffa and Dan Leffler, Herbalife Independent Members Melbourne",
               description:
-                "Herbalife Independent Distributor offering Herbalife nutrition products, personalised weight-loss coaching, and protein support across Melbourne and Australia.",
+                "Jaffa and Dan Leffler, Herbalife Independent Members, offering Herbalife nutrition products, personalised weight-loss coaching, and protein support across Melbourne and Australia.",
               url: "https://www.loseweighttoday.com.au",
               image: "https://www.loseweighttoday.com.au/Logo.png",
               logo: "https://www.loseweighttoday.com.au/Logo.png",
@@ -93,8 +93,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 { "@type": "Country", name: "Australia" },
               ],
               founder: [
-                { "@type": "Person", name: "Dan Leffler" },
                 { "@type": "Person", name: "Jaffa Leffler" },
+                { "@type": "Person", name: "Dan Leffler" },
               ],
               knowsAbout: [
                 "Herbalife nutrition products",
@@ -116,7 +116,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "WebSite",
               "@id": "https://www.loseweighttoday.com.au/#website",
               url: "https://www.loseweighttoday.com.au/",
-              name: "Lose Weight Today - Herbalife Independent Distributor",
+              name: "Lose Weight Today - Jaffa and Dan Leffler, Herbalife Independent Members",
               publisher: { "@id": "https://www.loseweighttoday.com.au/#organization" },
             }),
           }}
@@ -130,7 +130,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "@type": "Service",
                 name: "Personalised Weight-Loss Coaching",
                 description:
-                  "Free wellness evaluation and personalised Herbalife nutrition plan, with ongoing coaching support from Dan & Jaffa Leffler in Melbourne.",
+                  "Free wellness evaluation and personalised Herbalife nutrition plan, with ongoing coaching support from Jaffa and Dan Leffler, Herbalife Independent Members, in Melbourne.",
                 provider: { "@id": "https://www.loseweighttoday.com.au/#organization" },
                 areaServed: [
                   { "@type": "City", name: "Melbourne" },
@@ -143,7 +143,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "@type": "Service",
                 name: "Herbalife Business Opportunity",
                 description:
-                  "Information and support for becoming a Herbalife Independent Distributor, including low-cost membership and a 90-day money-back guarantee.",
+                  "Information and support for becoming a Herbalife Independent Member, including low-cost membership and a 90-day money-back guarantee.",
                 provider: { "@id": "https://www.loseweighttoday.com.au/#organization" },
                 areaServed: { "@type": "Country", name: "Australia" },
                 url: "https://www.loseweighttoday.com.au/business-opportunity",

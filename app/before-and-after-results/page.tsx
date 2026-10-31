@@ -40,7 +40,7 @@ export default function BeforeAfterPage() {
             Before &amp; After Weight-Loss Results
           </h1>
           <p className="text-green-100 text-lg max-w-2xl mx-auto">
-            Real client transformations achieved through personalised Herbalife nutrition coaching with Dan &amp; Jaffa.
+            Real client transformations achieved through personalised Herbalife nutrition coaching with Jaffa &amp; Dan.
           </p>
         </div>
       </section>

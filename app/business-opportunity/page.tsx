@@ -27,7 +27,7 @@ const benefits = [
   },
   {
     title: "Mentorship & Training",
-    description: "Receive full mentorship and training from experienced distributors Dan & Jaffa.",
+    description: "Receive full mentorship and training from Jaffa and Dan, Herbalife Independent Members.",
   },
   {
     title: "90-Day Money Back",

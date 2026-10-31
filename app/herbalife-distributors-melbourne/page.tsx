@@ -5,17 +5,17 @@ const siteUrl = "https://www.loseweighttoday.com.au";
 const pageUrl = `${siteUrl}/herbalife-distributors-melbourne`;
 
 export const metadata: Metadata = {
-  title: "Herbalife Distributors Melbourne | Dan & Jaffa Leffler",
+  title: "Herbalife Distributors Melbourne | Jaffa and Dan Leffler",
   description:
-    "Find Herbalife Independent Distributors in Melbourne. Dan & Jaffa Leffler are based in Caulfield North and provide local assistance plus Australia-wide online ordering.",
+    "Find Jaffa and Dan Leffler, Herbalife Independent Members, in Melbourne. Based in Caulfield North, providing local assistance plus Australia-wide online ordering.",
   alternates: { canonical: pageUrl },
   openGraph: {
     type: "website",
     locale: "en_AU",
     url: pageUrl,
-    title: "Herbalife Distributors Melbourne | Dan & Jaffa Leffler",
+    title: "Herbalife Distributors Melbourne | Jaffa and Dan Leffler",
     description:
-      "Melbourne Herbalife Independent Distributors based in Caulfield North, with local assistance and Australia-wide online ordering.",
+      "Jaffa and Dan Leffler, Herbalife Independent Members, based in Caulfield North, Melbourne, with local assistance and Australia-wide online ordering.",
   },
 };
 
@@ -23,17 +23,17 @@ const faqs = [
   {
     question: "Where can I find a Herbalife distributor in Melbourne?",
     answer:
-      "Dan and Jaffa Leffler are Herbalife Independent Distributors based at 23 Salisbury Street, Caulfield North, Melbourne, Victoria 3161.",
+      "Jaffa and Dan Leffler are Herbalife Independent Members based at 23 Salisbury Street, Caulfield North, Melbourne, Victoria 3161.",
   },
   {
     question: "Can I order Herbalife products online in Australia?",
     answer:
-      "Yes. This website links to Dan and Jaffa's official Herbalife online shop for Australia-wide ordering.",
+      "Yes. This website links to Jaffa and Dan's official Herbalife online shop for Australia-wide ordering.",
   },
   {
     question: "Can I speak with a local distributor before ordering?",
     answer:
-      "Yes. You can call 0478 965 828 or use the contact page to speak with Dan and Jaffa.",
+      "Yes. You can call 0478 965 828 or use the contact page to speak with Jaffa and Dan.",
   },
 ];
 
@@ -43,8 +43,8 @@ const structuredData = {
     {
       "@type": "LocalBusiness",
       "@id": `${siteUrl}/#business`,
-      name: "Lose Weight Today - Herbalife Independent Distributor Melbourne",
-      alternateName: "Dan & Jaffa Leffler Herbalife Independent Distributors",
+      name: "Lose Weight Today - Jaffa and Dan Leffler, Herbalife Independent Members, Melbourne",
+      alternateName: "Jaffa and Dan Leffler, Herbalife Independent Members",
       url: siteUrl,
       telephone: "+61478965828",
       email: "leffleryd@gmail.com",
@@ -62,15 +62,15 @@ const structuredData = {
         { "@type": "Country", name: "Australia" },
       ],
       founder: [
-        { "@type": "Person", name: "Dan Leffler" },
         { "@type": "Person", name: "Jaffa Leffler" },
+        { "@type": "Person", name: "Dan Leffler" },
       ],
     },
     {
       "@type": "WebPage",
       "@id": `${pageUrl}/#webpage`,
       url: pageUrl,
-      name: "Herbalife Distributors Melbourne | Dan & Jaffa Leffler",
+      name: "Herbalife Distributors Melbourne | Jaffa and Dan Leffler",
       about: { "@id": `${siteUrl}/#business` },
     },
     {
@@ -111,7 +111,7 @@ export default function HerbalifeDistributorsMelbournePage() {
             Herbalife Distributors Melbourne
           </h1>
           <p className="text-lg md:text-xl text-green-100 max-w-3xl mx-auto mb-8">
-            Dan &amp; Jaffa Leffler are Herbalife Independent Distributors based in Caulfield North,
+            Jaffa and Dan Leffler are Herbalife Independent Members based in Caulfield North,
             Melbourne, with local contact and Australia-wide online ordering.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -119,7 +119,7 @@ export default function HerbalifeDistributorsMelbournePage() {
               href="/contact"
               className="bg-herbalife-orange hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold text-lg transition-colors"
             >
-              Contact Dan &amp; Jaffa
+              Contact Jaffa &amp; Dan
             </Link>
             <a
               href="tel:+61478965828"
@@ -138,8 +138,8 @@ export default function HerbalifeDistributorsMelbournePage() {
               Local Herbalife Independent Distributors in Melbourne
             </h2>
             <p className="text-gray-700 text-lg mb-4">
-              If you are searching for a Herbalife distributor in Melbourne, you can contact Dan
-              and Jaffa directly from their Caulfield North location.
+              If you are searching for a Herbalife distributor in Melbourne, you can contact Jaffa
+              and Dan directly from their Caulfield North location.
             </p>
             <p className="text-gray-700 text-lg mb-4">
               Local customers can speak with a distributor before ordering, while customers across
@@ -153,7 +153,7 @@ export default function HerbalifeDistributorsMelbournePage() {
           <aside className="bg-gray-50 rounded-2xl border border-gray-200 p-7">
             <h2 className="font-heading text-2xl font-bold text-gray-900 mb-5">Melbourne location</h2>
             <address className="not-italic text-gray-700 space-y-3">
-              <p><strong>Dan &amp; Jaffa Leffler</strong><br />Herbalife Independent Distributors</p>
+              <p><strong>Jaffa and Dan Leffler</strong><br />Herbalife Independent Members</p>
               <p>23 Salisbury Street<br />Caulfield North VIC 3161<br />Melbourne, Australia</p>
               <p><a className="text-herbalife-green font-semibold hover:underline" href="tel:+61478965828">0478 965 828</a></p>
               <p>9am – 8pm, 7 days a week</p>
@@ -184,7 +184,7 @@ export default function HerbalifeDistributorsMelbournePage() {
             Looking for Herbalife in Melbourne?
           </h2>
           <p className="text-green-100 text-lg mb-8">
-            Contact Dan &amp; Jaffa Leffler in Caulfield North or use the online store links on Lose Weight Today.
+            Contact Jaffa &amp; Dan Leffler in Caulfield North or use the online store links on Lose Weight Today.
           </p>
           <Link
             href="/contact"

@@ -4,11 +4,11 @@ import { TrackPhoneLink, TrackSocialLink, TrackBecomeMemberLink } from "@/compon
 export const metadata: Metadata = {
   title: "Contact Us – Start Your Weight-Loss Journey Today",
   description:
-    "Contact Dan & Jaffa Leffler, Herbalife Independent Distributors in Caulfield North, Melbourne. Walk-in 7 days 9am-8pm. Call 0478 965 828.",
+    "Contact Jaffa and Dan Leffler, Herbalife Independent Members, in Caulfield North, Melbourne. Walk-in 7 days 9am-8pm. Call 0478 965 828.",
   alternates: { canonical: "https://www.loseweighttoday.com.au/contact" },
   openGraph: {
     title: "Contact Us – Start Your Weight-Loss Journey Today",
-    description: "Contact Dan & Jaffa Leffler, Herbalife Independent Distributors in Melbourne.",
+    description: "Contact Jaffa and Dan Leffler, Herbalife Independent Members, in Melbourne.",
     url: "https://www.loseweighttoday.com.au/contact",
   },
 };

@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Lose Weight Today – Herbalife Independent Distributor Melbourne";
+export const alt = "Lose Weight Today – Jaffa and Dan Leffler, Herbalife Independent Members, Melbourne";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -42,13 +42,14 @@ export default function Image() {
           </div>
           <div
             style={{
-              fontSize: 28,
+              fontSize: 24,
               color: "#f59e0b",
               fontWeight: 600,
               marginBottom: 24,
+              textAlign: "center",
             }}
           >
-            Herbalife Independent Distributor – Melbourne
+            Jaffa & Dan Leffler, Herbalife Independent Members
           </div>
           <div
             style={{

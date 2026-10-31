@@ -13,6 +13,7 @@ const productLinks = [
 
 const mainLinks = [
   { href: "/", label: "Home" },
+  { href: "/herbalife-products-australia", label: "Shop Online" },
   { href: "/recipes", label: "Recipes" },
   { href: "/before-and-after-results", label: "Before and After Results" },
   { href: "/business-opportunity", label: "Business - Opportunity" },
@@ -29,7 +30,7 @@ export default function Navbar() {
     <header className="bg-white shadow-md sticky top-0 z-50">
       {/* Top bar */}
       <div className="bg-herbalife-green text-white text-center text-sm py-1.5 px-4">
-        <span>Herbalife Independent Distributor — Dan &amp; Jaffa Leffler | Call{" "}
+        <span>Jaffa and Dan Leffler, Herbalife Independent Members | Call{" "}
           <a href="tel:0478965828" className="underline font-semibold" onClick={() => trackPhoneClick()}>0478 965 828</a>
         </span>
       </div>
@@ -39,7 +40,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2">
           <div className="flex flex-col">
             <span className="text-herbalife-green font-heading font-bold text-xl leading-tight">Lose Weight Today</span>
-            <span className="text-xs text-gray-500">Herbalife Independent Distributor</span>
+            <span className="text-xs text-gray-500">Herbalife Independent Members</span>
           </div>
         </Link>
 

@@ -10,9 +10,9 @@ export default function Footer() {
         <div>
           <h3 className="font-heading font-bold text-lg mb-4 text-herbalife-green">Lose Weight Today</h3>
           <p className="text-gray-300 text-sm leading-relaxed">
-            Herbalife Independent Distributor
+            Jaffa and Dan Leffler
           </p>
-          <p className="text-gray-300 text-sm mt-2">Dan &amp; Jaffa Leffler</p>
+          <p className="text-gray-300 text-sm mt-2">Herbalife Independent Members</p>
           <p className="text-gray-400 text-sm mt-1">Senior Executive Presidents - 15K</p>
           <p className="text-gray-400 text-sm mt-1">Serving customers since 1993</p>
         </div>
@@ -21,10 +21,13 @@ export default function Footer() {
         <div>
           <h3 className="font-heading font-bold text-lg mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
+            <li><Link href="/herbalife-products-australia" className="text-gray-300 hover:text-herbalife-green transition-colors">Herbalife Products Australia</Link></li>
+            <li><Link href="/wellness-evaluation" className="text-gray-300 hover:text-herbalife-green transition-colors">Free Wellness Evaluation</Link></li>
             <li><Link href="/925764824480" className="text-gray-300 hover:text-herbalife-green transition-colors">Q&amp;A</Link></li>
             <li><Link href="/before-and-after-results" className="text-gray-300 hover:text-herbalife-green transition-colors">Before and After Results</Link></li>
             <li><Link href="/contact" className="text-gray-300 hover:text-herbalife-green transition-colors">Contact Us</Link></li>
             <li><Link href="/privacy-policy" className="text-gray-300 hover:text-herbalife-green transition-colors">Privacy Policy</Link></li>
+            <li><Link href="/terms" className="text-gray-300 hover:text-herbalife-green transition-colors">Terms of Use</Link></li>
           </ul>
         </div>
 
@@ -101,7 +104,7 @@ export default function Footer() {
       <div className="border-t border-gray-700">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
           <p>&copy; {new Date().getFullYear()} Leffler International Investments Pty Ltd. All rights reserved.</p>
-          <p className="mt-1 md:mt-0">ABN: 90124089345 | Independent Herbalife Nutrition Distributors</p>
+          <p className="mt-1 md:mt-0">ABN: 90124089345 | Jaffa and Dan Leffler, Herbalife Independent Members</p>
         </div>
       </div>
     </footer>

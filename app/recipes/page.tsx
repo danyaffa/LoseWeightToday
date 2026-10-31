@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Delicious & Nutritious Recipes – Protein Shakes, Snacks & More",
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 
 type Recipe = {
   title: string;
+  image: string;
   category: "Shake" | "Snack" | "Soup";
   time: string;
   servings: number;
@@ -27,6 +29,7 @@ type Recipe = {
 const recipes: Recipe[] = [
   {
     title: "Cristiano Ronaldo's Signature Shake",
+    image: "/recipes/cristiano-ronaldo-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -48,6 +51,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Cake Batter Shake",
+    image: "/recipes/cake-batter-shake.jpg",
     category: "Shake",
     time: "5 min",
     servings: 1,
@@ -71,6 +75,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Berry Blast Shake",
+    image: "/recipes/berry-blast-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -93,6 +98,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Vanilla Blueberry Protein Shake",
+    image: "/recipes/vanilla-blueberry-shake.jpg",
     category: "Shake",
     time: "10 min",
     servings: 1,
@@ -114,6 +120,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Apple Caramel Protein Shake",
+    image: "/recipes/apple-caramel-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -136,6 +143,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Mocha Energy Boost Protein Shake",
+    image: "/recipes/mocha-energy-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -157,6 +165,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Matcha and Red Bean Shake",
+    image: "/recipes/matcha-red-bean-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -178,6 +187,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Passion Fruit Protein Shake",
+    image: "/recipes/passion-fruit-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -200,6 +210,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Pineapple Shake",
+    image: "/recipes/pineapple-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -221,6 +232,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Tropical Twist Shake",
+    image: "/recipes/tropical-twist-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -242,6 +254,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Green Apple Shake",
+    image: "/recipes/green-apple-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -264,6 +277,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Glowing Skin Collagen Shake",
+    image: "/recipes/glowing-skin-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -286,6 +300,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Mango Tango Shake",
+    image: "/recipes/mango-tango-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -307,6 +322,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Cherry Cheesecake Shake",
+    image: "/recipes/cherry-cheesecake-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -329,6 +345,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Mango Yogurt Shake",
+    image: "/recipes/mango-yogurt-shake.jpg",
     category: "Shake",
     time: "2 min",
     servings: 1,
@@ -351,6 +368,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Chocolate Protein Cookies",
+    image: "/recipes/chocolate-protein-cookies.jpg",
     category: "Snack",
     time: "25 min",
     servings: 5,
@@ -379,6 +397,7 @@ const recipes: Recipe[] = [
   },
   {
     title: "Creamy Mushroom Protein Soup",
+    image: "/recipes/mushroom-soup.jpg",
     category: "Soup",
     time: "10 min",
     servings: 1,
@@ -441,6 +460,7 @@ export default function RecipesPage() {
       item: {
         "@type": "Recipe",
         name: r.title,
+        image: `https://www.loseweighttoday.com.au${r.image}`,
         description: r.description,
         prepTime: `PT${parseInt(r.time)}M`,
         recipeYield: `${r.servings} serving${r.servings > 1 ? "s" : ""}`,
@@ -514,24 +534,35 @@ export default function RecipesPage() {
                 className="bg-gray-50 rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow"
               >
                 {/* Card Header */}
-                <div className="bg-gradient-to-r from-herbalife-green to-green-700 p-4">
-                  <div className="flex items-center justify-between mb-2">
-                    <span
-                      className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold ${
-                        recipe.category === "Shake"
-                          ? "bg-blue-100 text-blue-700"
-                          : recipe.category === "Snack"
-                          ? "bg-amber-100 text-amber-700"
-                          : "bg-red-100 text-red-700"
-                      }`}
-                    >
-                      <CategoryIcon category={recipe.category} />
-                      {recipe.category}
-                    </span>
+                <div className="relative">
+                  <div className="relative h-48 w-full">
+                    <Image
+                      src={recipe.image}
+                      alt={recipe.title}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      className="object-cover"
+                    />
                   </div>
-                  <h3 className="font-heading font-bold text-white text-lg leading-tight">
-                    {recipe.title}
-                  </h3>
+                  <div className="bg-gradient-to-r from-herbalife-green to-green-700 p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <span
+                        className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold ${
+                          recipe.category === "Shake"
+                            ? "bg-blue-100 text-blue-700"
+                            : recipe.category === "Snack"
+                            ? "bg-amber-100 text-amber-700"
+                            : "bg-red-100 text-red-700"
+                        }`}
+                      >
+                        <CategoryIcon category={recipe.category} />
+                        {recipe.category}
+                      </span>
+                    </div>
+                    <h3 className="font-heading font-bold text-white text-lg leading-tight">
+                      {recipe.title}
+                    </h3>
+                  </div>
                 </div>
 
                 {/* Card Body */}

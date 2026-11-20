@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { TrackedExternalLink, TrackedInternalLink } from "@/components/TrackedLink";
+import { LANDING_PAGES_LAST_UPDATED_DISPLAY } from "@/lib/landingSchema";
 import type { Faq } from "@/lib/landingSchema";
 
 export const GOHERBALIFE_SHOP_URL =
@@ -50,6 +51,7 @@ export default function ShopLandingPage({
   faqs = defaultFaqs,
   trackingPrefix,
   children,
+  lastUpdated = LANDING_PAGES_LAST_UPDATED_DISPLAY,
 }: {
   breadcrumbLabel: string;
   h1: string;
@@ -57,6 +59,7 @@ export default function ShopLandingPage({
   faqs?: Faq[];
   trackingPrefix: string;
   children?: React.ReactNode;
+  lastUpdated?: string;
 }) {
   return (
     <>
@@ -69,7 +72,8 @@ export default function ShopLandingPage({
             <span className="mx-2">&rsaquo;</span>
             <span>{breadcrumbLabel}</span>
           </nav>
-          <h1 className="font-heading text-3xl md:text-5xl font-bold leading-tight mb-5">{h1}</h1>
+          <h1 className="font-heading text-3xl md:text-5xl font-bold leading-tight mb-3">{h1}</h1>
+          <p className="text-green-200 text-xs mb-5">Last updated: {lastUpdated}</p>
           <p className="text-green-100 text-lg max-w-3xl mb-8">{intro}</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <ShopCta trackingLabel={`${trackingPrefix}_shop_herbalife_products`} variant="outline" />

@@ -72,9 +72,10 @@ export default function QAPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-herbalife-green to-green-800 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-3">
             Frequently Asked Questions
           </h1>
+          <p className="text-green-200 text-xs mb-4">Last updated: August 10, 2026</p>
           <p className="text-green-100 text-lg max-w-2xl mx-auto">
             Common questions about Herbalife products, weight loss, and our coaching services
           </p>
@@ -127,6 +128,7 @@ export default function QAPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
+            dateModified: "2026-08-10",
             mainEntity: faqs.map((faq) => ({
               "@type": "Question",
               name: faq.question,

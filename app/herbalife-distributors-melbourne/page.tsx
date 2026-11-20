@@ -71,6 +71,7 @@ const structuredData = {
       "@id": `${pageUrl}/#webpage`,
       url: pageUrl,
       name: "Herbalife Distributors Melbourne | Jaffa and Dan Leffler",
+      dateModified: "2026-10-31",
       about: { "@id": `${siteUrl}/#business` },
     },
     {
@@ -107,9 +108,10 @@ export default function HerbalifeDistributorsMelbournePage() {
       <section className="bg-gradient-to-br from-herbalife-green to-green-800 text-white">
         <div className="max-w-5xl mx-auto px-4 py-16 md:py-24 text-center">
           <p className="text-green-100 font-semibold mb-3">Caulfield North · Melbourne · Victoria</p>
-          <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight mb-6">
+          <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight mb-4">
             Herbalife Distributors Melbourne
           </h1>
+          <p className="text-green-200 text-xs mb-6">Last updated: October 31, 2026</p>
           <p className="text-lg md:text-xl text-green-100 max-w-3xl mx-auto mb-8">
             Jaffa and Dan Leffler are Herbalife Independent Members based in Caulfield North,
             Melbourne, with local contact and Australia-wide online ordering.

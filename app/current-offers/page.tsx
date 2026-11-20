@@ -5,7 +5,7 @@ import { buildLandingSchema, siteUrl } from "@/lib/landingSchema";
 const pageUrl = `${siteUrl}/current-offers`;
 
 export const metadata: Metadata = {
-  title: "Current Herbalife Offers Australia | Lose Weight Today",
+  title: "Current Herbalife Offers Australia",
   description:
     "See current Herbalife offers available through Lose Weight Today. Log in or create a GoHerbalife account to view available member pricing and promotions.",
   alternates: { canonical: pageUrl },

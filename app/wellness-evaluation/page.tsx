@@ -5,7 +5,7 @@ import { buildLandingSchema, siteUrl } from "@/lib/landingSchema";
 const pageUrl = `${siteUrl}/wellness-evaluation`;
 
 export const metadata: Metadata = {
-  title: "Free Wellness Evaluation Melbourne & Australia | Lose Weight Today",
+  title: "Free Wellness Evaluation Melbourne & Australia",
   description:
     "Book a complimentary wellness evaluation with Jaffa and Dan Leffler, Herbalife Independent Members in Melbourne. Get personalised product and nutrition guidance.",
   alternates: { canonical: pageUrl },

@@ -5,7 +5,7 @@ import { buildLandingSchema, siteUrl } from "@/lib/landingSchema";
 const pageUrl = `${siteUrl}/herbalife-delivery-australia`;
 
 export const metadata: Metadata = {
-  title: "Herbalife Delivery Australia | Order Online | Lose Weight Today",
+  title: "Herbalife Delivery Australia | Order Online",
   description:
     "Information about ordering Herbalife products online for delivery across Australia through GoHerbalife, with support from Melbourne Herbalife Independent Members.",
   alternates: { canonical: pageUrl },

@@ -5,7 +5,7 @@ import { buildLandingSchema, siteUrl } from "@/lib/landingSchema";
 const pageUrl = `${siteUrl}/herbalife-weight-management-programs`;
 
 export const metadata: Metadata = {
-  title: "Herbalife Weight Management Programs Australia | Lose Weight Today",
+  title: "Herbalife Weight Management Programs Australia",
   description:
     "Explore Herbalife weight-management programs in Australia with Herbalife Independent Members in Melbourne. Learn how programs work and order through GoHerbalife.",
   alternates: { canonical: pageUrl },

@@ -5,7 +5,7 @@ import { buildLandingSchema, siteUrl } from "@/lib/landingSchema";
 const pageUrl = `${siteUrl}/herbalife-formula-1-shakes-australia`;
 
 export const metadata: Metadata = {
-  title: "Herbalife Formula 1 Shakes Australia | Lose Weight Today",
+  title: "Herbalife Formula 1 Shakes Australia",
   description:
     "Learn about Herbalife Formula 1 shakes in Australia, including flavours, usage and how to order through GoHerbalife with Melbourne-based Herbalife Independent Members.",
   alternates: { canonical: pageUrl },

@@ -4,7 +4,7 @@ import { TrackedInternalLink } from "@/components/TrackedLink";
 export const metadata: Metadata = {
   title: "About Jaffa & Dan Leffler – Senior Executive Presidents 15K",
   description:
-    "Meet Jaffa and Dan Leffler — Herbalife Independent Members since 1993, Senior Executive Presidents 15K. Passionate about helping people with health, energy, and lifestyle goals in Melbourne.",
+    "Meet Jaffa and Dan Leffler, Herbalife Independent Members since 1993, helping Melbourne clients with health, energy, and lifestyle goals.",
   alternates: { canonical: "https://www.loseweighttoday.com.au/about" },
   openGraph: {
     title: "About Jaffa & Dan Leffler – Senior Executive Presidents 15K",
